@@ -1,0 +1,7702 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass memoir
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Tape-Archive Time-Capsule via SAILDART"
+\pdf_author "Bruce Guenther Baumgart"
+\pdf_subject "Stanford A. I. Lab Archive"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Tape-Archive Time-Capsule via SAILDART
+\end_layout
+
+\begin_layout Standard
+\align center
+by
+\end_layout
+
+\begin_layout Standard
+\align center
+Bruce Guenther Baumgart
+\end_layout
+
+\begin_layout Standard
+\align center
+Submitted to Github, published on saildart.org and sent to a short email
+ list
+\end_layout
+
+\begin_layout Standard
+\align center
+in the year 2021, in partial fulfillment of the requirement
+\end_layout
+
+\begin_layout Standard
+\align center
+to explain a personal software folly to future generations
+\end_layout
+
+\begin_layout Standard
+\align center
+as well as to my dwindling circle of SAIL companions, while
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+at home in Los Gatos, California
+\end_layout
+
+\begin_layout Standard
+\align center
+twenty miles south of
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+LELAND STANFORD JUNIOR UNIVERSITY
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+June 2021
+\end_layout
+
+\begin_layout Standard
+\align center
+copyright©2021 Bruce G.
+ Baumgart, MMXXI.
+ All rights reserved,
+\end_layout
+
+\begin_layout Standard
+\align center
+except those granted by the license
+\end_layout
+
+\begin_layout Standard
+\align center
+Creative Commons Attribution-Share Alike 4.0 International License
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace 0.5in
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Author ..............................................................................................
+\begin_inset VSpace 0.5in
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Certified by ......................................................................................
+\begin_inset VSpace 0.5in
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Accepted by .....................................................................................
+\begin_inset VSpace 0.5in
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This document parallels Brian K.
+ Zuzga's 1995 MIT Thesis on archiving the MIT A.I.
+ Lab backup tapes.
+ Hence this mock 
+\shape italic
+thesis
+\shape default
+ cover page, academic \SpecialChar TeX
+ formating, and the tongue-in-cheek, patronizing comments
+ which are based on my having enjoyed the over 25 years of progress since
+ BKZ1995.
+ See the original for MIT at 
+\begin_inset CommandInset href
+LatexCommand href
+name "tcfs-thesis.pdf"
+target "https://www.saildart.org/Zuzga-Baumga/tcfs-thesis.pdf"
+literal "false"
+
+\end_inset
+
+ and here at 
+\begin_inset CommandInset href
+LatexCommand href
+name "faux-thesis.pdf"
+target "https://www.saildart.org/Zuzga-Baumga/faux-thesis.pdf"
+literal "false"
+
+\end_inset
+
+ is the riposte for Stanford.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Tape-Archive 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+Time-Capsule
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ via SAILDART
+\end_layout
+
+\begin_layout Author
+Bruce Guenther Baumgart
+\end_layout
+
+\begin_layout Date
+2020 and 2021
+\end_layout
+
+\begin_layout Abstract
+Stanford reseach has generated data since the founding of the university
+ in 1885, and for A.I.
+ computer vision even earlier in 1878, Eadweard Muybridge's research was
+ funded by Leland Stanford and was done on Stanford's land.
+ at Palo Alto, near the present CSD building.
+ A century later, the first Stanford A.I.
+ Lab generated 50 Gigabytes of data between 1972 and 1990.
+ The knowledge needed to decipher that data is here in this document.
+ Since physical offline media deteriorates, the SAILDART archive software
+ was developed to preserve both the data and the information, for your use
+ now and for your heirs and successors; way out there in the future.
+ Specifically, SAILDART is not intended as a universal format.
+ SAILDART software is licensed GPLv3.
+ SAILDART documentation is licensed Creative Commons Attribution-Share Alike
+ 4.0 International.
+\end_layout
+
+\begin_layout Abstract
+Using SAILDART, I believe I have preserved the data, the information and
+ perhaps the knowledge and wisdom that John McCarthy asked me to rescue
+ from the backup tapes written by DART (in two stages) during the twenty
+ three years of SAIL-WAITS time sharing system operation at Stanford.
+\end_layout
+
+\begin_layout Abstract
+My Thesis Adviser was John McCarthy.
+ My Thesis readers were Don Knuth, Alan Kay and Ken Colby.
+ Title: Geometric Modeling for Computer Vision.
+ The SAILDART preservation project was suggested to me by John McCarthy
+ in 1998 as an extension to my hack of retrieving my thesis work from one
+ (
+\shape italic
+um, very easy it was simply on the first one of the 229 reels
+\shape default
+) of the DART tapes.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+I acknowledge the encouragement of John McCarthy to do this project.
+ I was helped by Marty Frost in locating the final set of nine-track DART
+ tapes as well as a suitable tape drive.
+ That tape drive was on a loading dock ready to be scraped when we rescued
+ it.
+ John Nagle and Tom Costello assisted with the reading of the 229 reels
+ in 1998.
+\end_layout
+
+\begin_layout Standard
+Les Earnest has expressed enthusiasm for having an institution adopt the
+ SAILDART project, and has presented a paper 
+\series bold
+
+\begin_inset CommandInset href
+LatexCommand href
+name "Visible Legacies for Y3K"
+target "https://web.stanford.edu/~learnest/spin/legacies.htm"
+literal "false"
+
+\end_inset
+
+
+\series default
+ (similar to this pair of papers) reviewing archive time-capsule problems
+ and proposed solutions.
+\end_layout
+
+\begin_layout Standard
+Frost, Hartwig, Earnest and I (Baumgart) moved the 229 reels of DART tape
+ from Gates to Green, 26 April 2011.
+ That is from the Computer Science Department, William Gates Building to
+ special collections at the Green Library on the Stanford Campus.
+\end_layout
+
+\begin_layout Standard
+Finally, adding to Zuzga's remark, I would include on Sesame Street the
+ numbers 
+\series bold
+\size larger
+e
+\series default
+\size default
+ and 
+\series bold
+\size larger
+i
+\series default
+ 
+\size default
+and 
+\series bold
+\size larger
+π
+\series default
+\size default
+ which can be taught to children as geometric concepts as they learn to
+ count the integers.
+ Here is one easy to understand 
+\begin_inset CommandInset href
+LatexCommand href
+name "You-tube video"
+target "https://www.youtube.com/watch?v=-dhHrg-KbJ0&t=565s&ab_channel=Mathologer"
+literal "false"
+
+\end_inset
+
+ for 
+\series bold
+\size larger
+e
+\series default
+\size default
+ and 
+\series bold
+\size larger
+i
+\series default
+ 
+\size default
+and 
+\series bold
+\size larger
+π
+\series default
+\size default
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Chapter
+Begin Here
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+History teaches that history teaches us nothing
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ - Georg Wilhelm Fredrich Hegel
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The SAILDART project was suggested by John McCarthy to preserve data from
+ the first Stanford Artificial Intelligence Lab.
+ The project now (2021) consists of one volunteer, B.g.Baumgart.
+ We copied approximately fifty gigabytes from nine track tape to SCSI disk
+ drives in 1998.
+\end_layout
+
+\begin_layout Standard
+This project, the SAILDART, did not start with the original seven track
+ backup tapes, which were 
+\shape italic
+'Zuzga'
+\shape default
+ rescued in 1990, to newer tape media, by Marty Frost (et al) using the
+ tool named MCOPY, a modified DART.
+ This project, the SAILDART, does not see a profusion of difficult formats
+ of a vanished people.
+ Call me Ismael, or call me Ishi.
+ I see fewer than one million items, in primitive formats written by a few
+ tens of programs, most of which I had used, or even wrote, when I was young.
+ The value of the knowledge on the DART tapes, was published and monetized
+ early and often.
+ Like the gold of the Californian quartz layer; the tailings are only toxic
+ piles of slight historical or personal value.
+ Further legal issues of ownership, intellectual property theft, fraud and
+ prior art are best left in escrow to 2100 or so.
+ Further curating of stale email and the bulletin boards, continues for
+ the amusement of some of the surviving SAIL principals who have access
+ to this material.
+ The old personnel files, budgets and administrative trivia are mostly kept
+ in camera.
+\end_layout
+
+\begin_layout Standard
+This document parallels Zuzga's 1995 MIT Thesis and so it too contains three
+ sections, some of the material is interleaved out of order.
+\end_layout
+
+\begin_layout Itemize
+General framework of the SAIL file data base.
+\end_layout
+
+\begin_layout Itemize
+Specific issues concerning the DART tape input.
+\end_layout
+
+\begin_layout Itemize
+Current 2020s software tools for hacking inside SAIL corpora.
+\end_layout
+
+\begin_layout Chapter
+After capture of old tape –
+\begin_inset Newline newline
+\end_inset
+
+Hand off the digital baton !
+\end_layout
+
+\begin_layout Standard
+“
+\shape italic
+History will be kind to me, for I intend to write it myself.
+\shape default
+”
+\end_layout
+
+\begin_layout Standard
+\align right
+–Winston Churchill
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Ovalbox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "80col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "2em"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\size footnotesize
+I too like this Churchillian bon mot.
+ Digital archivist cliches include: this Churchill quote, that famous Santayana
+ quote, the Rosetta Stone meme and the Library of Alexandria trope.
+
+\shape italic
+ 
+\shape default
+I have visited the Rosetta Stone in London and I helped install some 900
+ computers for the Internet Archive at the Library of Alexandria in Egypt.
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+
+\size footnotesize
+- B.
+ g.
+ Baumgart
+\end_layout
+
+\begin_layout Plain Layout
+
+\size tiny
+And I implemented rounded-border sidebar-boxes in 1972, years before \SpecialChar TeX
+ or
+ CSS.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+DART Tape Inventory of SAIL files.
+\end_layout
+
+\begin_layout Standard
+In a round number, there are eight hundred thousand SAIL files found on
+ the final 229 reels of DART, of which some 3000 of those files hold the
+ card-catalog database of which files were on the disk and which files were
+ on tape, for nearly each week for 19 years.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+The tape archive Bill-of-Lading is 
+\series bold
+DART .
+ DAT [ DMP, SYS ]
+\begin_inset Newline newline
+\end_inset
+
+off line file names and tape numbers
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
+\end_inset
+
+The seen on the disk Letters-of-Transit are hidden
+\begin_inset Newline newline
+\end_inset
+
+ in the Piano at 
+\series bold
+ALLDIR .
+ DAT [ DMP, SYS ]
+\begin_inset Newline newline
+\end_inset
+
+on line file names and perhaps a tape number
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At the Stanford Artificial Intelligence Lab (SAIL), like at MIT's A.I.
+ Lab (CSAIL), we too had rooms full of 7-track and 9-track magnetic tapes
+ in various states of decay.
+ These tapes were the incremental, full, and archival dumps of machines
+ used for everyday work by students, faculty, staff and internet guests
+ from 1972 to 1990.
+ Parallel to Zuzga's effort at MIT, John McCarthy directed Marty Frost and
+ staff in the Labs
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+It is important to have one footnote.
+ The first Stanford A.I.
+ Lab was merged into CSD in 1979 when the buildings changed from DCP to
+ MJH.
+ The A.I.
+ winter lasted 25 years.
+ The second Stanford A.I.
+ Lab was founded in 2005.
+\end_layout
+
+\end_inset
+
+ in 1990, to consolidate almost 3000 of the old 7-Track 800 BPI failing
+ tapes onto 229 new 9-Track 6250 BPI tapes.
+ Those 9-Track tapes in turn were copied to SCSI disk drives in 1998.
+ The physical 229 reels of tape are kept in the Green Library.
+ The SAIL DART Archive project only deals with the 50 Gigabyte image of
+ the final 9-track tapes.
+\end_layout
+
+\begin_layout Verbatim
+Tape Inventory Table and Thesis motive.
+\end_layout
+
+\begin_layout Verbatim
++------+-------+-------+---------+--------+
+\end_layout
+
+\begin_layout Verbatim
+| year | reels | tapes | files   | size   |
+\end_layout
+
+\begin_layout Verbatim
++------+-------+-------+---------+--------+
+\end_layout
+
+\begin_layout Verbatim
+| 1972 |     3 |    33 |  32,774 | 0.4 GB | D.C.Power
+\end_layout
+
+\begin_layout Verbatim
+| 1973 |    13 |   205 | 135,134 | 2.4 GB | Lab
+\end_layout
+
+\begin_layout Verbatim
+| 1974 |    12 |   191 | 134,976 | 2.3 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1975 |    12 |   194 | 137,037 | 2.2 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1976 |    12 |   196 | 129,178 | 2.2 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1977 |    15 |   210 | 142,389 | 2.4 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1978 |    16 |   266 | 165,106 | 3.2 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1979 |    19 |   298 | 179,349 | 3.6 GB |
+\end_layout
+
+\begin_layout Verbatim
++------+-------+-------+---------+--------+
+\end_layout
+
+\begin_layout Verbatim
+| 1980 |    15 |   229 | 125,504 | 2.8 GB | Margaret
+\end_layout
+
+\begin_layout Verbatim
+| 1981 |    21 |   335 | 171,410 | 4.1 GB | Jacks
+\end_layout
+
+\begin_layout Verbatim
+| 1982 |    18 |   208 | 117,491 | 3.1 GB | Hall
+\end_layout
+
+\begin_layout Verbatim
+| 1983 |    12 |   132 |  79,264 | 2.3 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1984 |    16 |   157 |  85,058 | 2.9 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1985 |     8 |    71 |  43,403 | 1.5 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1986 |    14 |    47 |  63,219 | 2.6 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1987 |    11 |    51 |  44,350 | 2.2 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1988 |    16 |    54 |  65,294 | 2.9 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1989 |     8 |    48 |  27,224 | 1.6 GB |
+\end_layout
+
+\begin_layout Verbatim
+| 1990 |     7 |    32 |  11,996 | 1.2 GB |
+\end_layout
+
+\begin_layout Verbatim
++------+-------+-------+---------+--------+
+\end_layout
+
+\begin_layout Verbatim
+|      |   248 |  2957 | 1890156 | 46.
+ GB | naive totals
+\end_layout
+
+\begin_layout Verbatim
++------+-------+-------+---------+--------+
+\end_layout
+
+\begin_layout Verbatim
+| 19 years        2984 tape numbers       |   canonical
+\end_layout
+
+\begin_layout Verbatim
+|          229 reels       50 Gigabytes   |   totals
+\end_layout
+
+\begin_layout Verbatim
+|                   2,000,000 file tags   |
+\end_layout
+
+\begin_layout Verbatim
+|                     900,000 blob values |
+\end_layout
+
+\begin_layout Verbatim
++------+-------+-------+---------+--------+    
+\end_layout
+
+\begin_layout Standard
+The collection of WAITS backup DART tapes contains approximately 50 gigabytes
+ of data.
+ There are only 229 reels; reels spanning two years are counted twice in
+ the naive total.
+ The maximum tape number used was 2984, the saga of lost and non-existent
+ tapes is recited else where.
+ Tapes 1 to 2746 were 7-Track 800 BPI.
+ From September 1985, tapes 2747 to 2984 were 9-Track 6250 BPI.
+ 
+\end_layout
+
+\begin_layout Subsection
+“I Got My Thesis !”
+\end_layout
+
+\begin_layout Standard
+I returned to the Lab in 1998 (
+\shape italic
+ well but 'my Lab' had moved to Campus, the backup data had been re-copied
+ once, details...
+
+\shape default
+ ) and I asked Marty Frost if I could retrieve my thesis work and its accompanyi
+ng code and its 3D data models, raster images, vector plot files and whatever
+ else was saved on the DART backup tapes.
+ It was easy to service this request.
+ First, we did not bother looking for an index (there wasn't one yet); we
+ started with the first reel of physical tape, which happened to be on-site.
+ Then we found a suitable tape drive, conveniently located nearby on the
+ loading dock at Allen; it was about to be taken away as junk.
+ We pushed it across Sierra Street (which has since been renamed Jane Stanford
+ Way) from Allen to Gates.
+ The 1998 copying was done using the low level Unix (Solaris that year)
+ utilities, dd and tar.
+ Finally SMOP, Small Matter of Programming, I hacked into the records found
+ on the tape using od, octal dump, and a bit of 'C' code named readtape.c
+ which I expanded substantially and later re-named undart.c.
+ I happened to have had hardcopy paper manuals for PDP-10, WAITS UUO and
+ WAITS Monitor that I had kept from the 1970s.
+ I also happened to recall a lot of WAITS details such as the SIXBIT encoding
+ of filenames, and I was at the time fiddling with large data file systems
+ at IBM Almaden Research as my day job.
+ So this vast number of WAITS tapes proved easy for me to use.
+ YMMV by quite a bit.
+\end_layout
+
+\begin_layout Subsection
+Historical Value
+\end_layout
+
+\begin_layout Standard
+Answering Zuzga, these days we lookup the etymology of 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Foobar
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ and the chronology of 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Minsky K-lines
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+ using the search engines.
+ Those search engines have constantly visited the SAILDART archive web site
+ since it first appeared on the web in 2002.
+ The earliest Archive.org Wayback Machine SAILDART crawl image is dated 11
+ October 2006; 
+\shape italic
+
+\begin_inset Quotes eld
+\end_inset
+
+I had thought that many years would pass before the cybersapiens would read
+ this archive, but Googlebot/2.1 was already chewing on it back in 2002.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Intellectual Property and Patent Searches
+\end_layout
+
+\begin_layout Standard
+Again.
+ The valuable information and knowledge from the A.I.
+ labs at MIT and Stanford has been published and monetized early and often.
+ The idea of investigating intellectual property and priority of discovery
+ issues does not appeal to me.
+ 
+\emph on
+Do not awaken sleeping giants.
+ Do not meddle in the affairs of Wizards, for they are subtle and quick
+ to anger.
+
+\emph default
+ Avoid patent trolls and copyright mickey mouse.
+\end_layout
+
+\begin_layout Standard
+Nevertheless the SAILDART has several controversial priority cases that
+ may yet attract further investigation; if anyone still cares about the
+ exact origins of Sun Microsystems and Cisco Systems; or possible prior
+ art examples predating Adobe font technology patents.
+ And Kodak patented the 
+\emph on
+digital camera
+\emph default
+ years after SAIL and others demonstrated digital imaging technology.
+\end_layout
+
+\begin_layout Section
+Five Practical Alternatives to a Universal Format.
+\end_layout
+
+\begin_layout Standard
+After SAIL MCOPY copied the old tapes onto new tapes; and after SAILDART
+ copied those new tapes onto SCSI disks; the five alternatives that Zuzga
+ considered as impractical in 1995 were all implemented to some extent before
+ 2020.
+\end_layout
+
+\begin_layout Subsection
+Preserving the Byte Vector
+\end_layout
+
+\begin_layout Standard
+Reading 229 reels in 1998 generated 41,594 files most of which contained
+ valid DART version #6 formated records.
+ The header of each record has its length in PDP10 words.
+ There were only 61 gaps where the record header count (and other fiducial
+ markings) failed to appear where they were expected to be.
+ So I coined a new 
+\begin_inset Quotes eld
+\end_inset
+
+GAP
+\begin_inset Quotes erd
+\end_inset
+
+ record type and have concatenated all the tape bytes into one file named
+ 
+\series bold
+\size footnotesize
+flat_DART_data8
+\series default
+\size default
+ with its MD5 hash value 
+\series bold
+3adbff17fd7f9f6eb9107755594ae0b9
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Maintaining Vintage Systems
+\end_layout
+
+\begin_layout Standard
+The Living Computer History Museum in Seattle has both a working KL10 and
+ a working KA10.
+ 
+\end_layout
+
+\begin_layout Subsection
+Emulators
+\end_layout
+
+\begin_layout Standard
+Software for PDP-10 emulators exist - see GITHUB.
+ There is canonical specification for the PDP-10 instruction set, however
+ the ( hand drawn ! ) wiring diagrams exist.
+ The PDP-10 at Stanford was serial number 32, and was modified, with two
+ significant opcodes, XCTR and FIXX.
+ Also the I/O devices included several crucial one of its kind implementation
+ for the XGP, the III vector display, the Datadisc raster displays, the
+ video crossbar switch, the audio crossbar switch, the color synthsizer,
+ and four different robotic arms the TV input, and the mobile CART.
+ The PDP-6 at Stanford was serial number 16 and had a CONS instruction which
+ was never used.
+\end_layout
+
+\begin_layout Subsection
+Maintaining the Operating System
+\begin_inset Newline newline
+\end_inset
+
+and Relevant Applications
+\end_layout
+
+\begin_layout Standard
+The MIT operating system was named ITS.
+ The Stanford operating system was belatedly named WAITS.
+ Prior to 1978 the operating system boot initialization banner name was
+ simply SYSTEM and the manuals often refered to it as the MONITOR, hence
+ that iron clad boat image on the early monitor manuals.
+\end_layout
+
+\begin_layout Subsection
+Translating the Data into so called 
+\emph on
+Standard
+\emph default
+ Formats
+\end_layout
+
+\begin_layout Standard
+One of the major improvements in computer software technology since the
+ 1990s has been the universal adoption of the UTF8 character encoding.
+ The SAIL 7-bit non-standard ASCII is easily converted into UTF8 text.
+\end_layout
+
+\begin_layout Chapter
+Rosetta Stones and
+\begin_inset Newline newline
+\end_inset
+
+Fortune Cookies
+\end_layout
+
+\begin_layout Standard
+The Rossetta Stone in the British Museum (stolen from France, who stole
+ it from Egypt) has three incomplete copies of an edict issued 27 March
+ 196 BCE (on the negative ISODATE -195-03-27 uh, was that on a Sunday ?
+ Lots of priests were standing around who are listed by name.
+ ISO 8601:2004 includes a year zero.) the lower copy on the stone is written
+ in greek, the middle copy is in demonic and the upper copy is in Hieroglyphic.
+ The Rossetta Stone provided crucial hints to reading ancient Egyptian Hieroglyp
+hics.
+ The Rosetta lesson is: 
+\begin_inset Quotes eld
+\end_inset
+
+leave several copies in different formats
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Similar to the rule: 
+\begin_inset Quotes eld
+\end_inset
+
+Lots Of Copies Keeps Stuff Safe
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Do reflect that the Rosetta Stone is inadequate for what you need to understand
+ Egyptian Hieroglyphic text which should include a grammar ( I started with
+ Gardiner 3rd edition Oxford ) a dictionary, a thesaurus and we might as
+ well throw in the complete surviving corpus of ancient Egyptian text.
+ Here, here and here.
+ In the plural, generic rosetta stones pave the way to natural language
+ understanding software; for example, the corpus of parallel Canadian French
+ and Canadian English government documents is one such rosetta stone highway.
+\end_layout
+
+\begin_layout Standard
+One of the early 
+\begin_inset Quotes eld
+\end_inset
+
+chat bots
+\begin_inset Quotes erd
+\end_inset
+
+ was the program named FORTUN which selected a line of text from the file
+ FORTUN.TXT[2,2] which is the first reasonably long public text file on the
+ SAILDART tapes.
+ I like to consider the email messages as Private and the first version
+ of the MAINT.TXT[2,2] file is only three lines of text and the first NOTICE.TXT[2
+,2]
+\end_layout
+
+\begin_layout Standard
+Do read the Wikipedia article concerning the Rosetta Stone, as well as the
+ article about Fortune Cookies.
+\end_layout
+
+\begin_layout Section
+Design Goal : enable the reader to read the data
+\end_layout
+
+\begin_layout Standard
+The zero-information time-capsule bootstrap scenario depicted by Carl Sagan
+ and others is unnecessary, but fun to think about now and then.
+ English is the Greek of our day.
+ UTF8 is the ASCII of this decade, the 2020s.
+\end_layout
+
+\begin_layout Section
+The Solution : Name Value data sets
+\end_layout
+
+\begin_layout Standard
+Zuzga invented yet another name-value notation; while for SAILDART I have
+ not yet moved off much from CSV, Comma delimited String Values.
+ My bench top working dataset starts from DATA8 and/or OCTAL on whatever
+ Linux file system is best supported and widely used in a given year.
+ I was very fond of RieserFS prior to the uxoricide, but for 2021 SAILDART
+ is on ext4 or xfs.
+\end_layout
+
+\begin_layout Chapter
+Translate Geek 1970 into Geek 2020
+\end_layout
+
+\begin_layout Standard
+Convenient for SAILDART, there is only the one dataset which is the DART
+ backup reels from 1990 which captured the earlier DART backup tapes.
+ This chapter is a narrative on translating the DART data from PDP-10 WAITS
+ 1970s formats into 2020 GNU/Linux platform formats which are internet compatibl
+e.
+ Unlike Zuzga, I am not providing an example of 
+\shape italic
+platform-independence
+\shape default
+ but merely discussing the conversion from the old-platform to a newer-platform,
+ which is the the IPv4 and IPv6 internet.
+ In the long view, the internet formats will change to communicate with
+ the extra terrestials and with the future, beyond Y10K, for the platforms
+ built and inhabited by our cybersapien successors.
+ Unless a nearby supernova gamma ray event sterilizes our neighborhood.
+ 
+\end_layout
+
+\begin_layout Section
+Capture
+\end_layout
+
+\begin_layout Standard
+The nasty chore of copying about 3000 old 7-track tapes into late 20th century
+ 9-track tapes was done by Marty Frost, before my involvement with DART
+ data preservation.
+\end_layout
+
+\begin_layout Subsection
+Design
+\end_layout
+
+\begin_layout Standard
+The MCOPY 1990 capture software is available inside the SAILDART for your
+ inspection.
+ The SAILDART 1998 capture simply applied the unix command shell tools 
+\series bold
+dd
+\series default
+ and 
+\series bold
+tar
+\series default
+.
+\end_layout
+
+\begin_layout Subsection
+Media Memory Management
+\end_layout
+
+\begin_layout Standard
+Even the second capture process in 1998 left iron oxide on the tape heads
+ and on the operator's hands.
+ We cleaned the tape heads and tape path with isopropyl and Kimwipes, before
+ reading each and every tape.
+\end_layout
+
+\begin_layout Standard
+Our attitude in 1998 was that of informal hacking applied to securing a
+ further sample of the DART data of unknown value or more likely of insignifican
+t value; rather than an attitude of careful professional expertise to recover
+ high value data.
+ I had been lucky - my personal data was on the first reel - going for all
+ 229 reels, at 20 minutes each, was a bit of a chore as well as an extra
+ commute; although I happened to own, and to be slinging around, quite a
+ few 4GB Maxtor disks that year.
+ Larry and Sergey's Duplo kludge was still sitting in the next room at Gates
+ in 1998.
+ My disk kludge 
+\begin_inset Quotes eld
+\end_inset
+
+big-data
+\begin_inset Quotes erd
+\end_inset
+
+ experiment was four disk drives in each of many pendflex folders, with
+ tens of folders hanging in plastic milk crates; with bare motherboards
+ and SCSI controllers.
+\end_layout
+
+\begin_layout Subsection
+Contemporaneous Logs
+\end_layout
+
+\begin_layout Standard
+The 1990 months of MCOPY work left extensive log files, reports, summaries
+ and email messaging.
+ The 1998 weeks of DD_TAR have no logs; I did find a single sheet of paper
+ with a few Post-it like notes left at the keyboard as we changed the input
+ tapes or the output SCSI disk units:
+\end_layout
+
+\begin_layout Verbatim
+5 March 1998
+\end_layout
+
+\begin_layout Verbatim
+11:15 pm	left tape #p3061 reading	BgB
+\end_layout
+
+\begin_layout Verbatim
+6 March 1998	4pm start #p3062
+\end_layout
+
+\begin_layout Verbatim
+				11:20 pm finished #p3085
+\end_layout
+
+\begin_layout Verbatim
+Lower disks ARE Brand New
+\end_layout
+
+\begin_layout Verbatim
+console break
+\end_layout
+
+\begin_layout Verbatim
+NO DISMOUNT WAS POSSIBLE WITHOUT ROOT Permission.
+ BgB 11:30pm
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+Replaced two disks
+\end_layout
+
+\begin_layout Verbatim
+	left tape #3086 reading in
+\end_layout
+
+\begin_layout Verbatim
+	2:30 pm Sat 7 March BgB
+\end_layout
+
+\begin_layout Verbatim
+
+\end_layout
+
+\begin_layout Verbatim
+PAST HALF DONE !
+\end_layout
+
+\begin_layout Verbatim
+	Tapes read as marked
+\end_layout
+
+\begin_layout Verbatim
+	with Green Stickers
+\end_layout
+
+\begin_layout Verbatim
+		98.3.9 / 10pm
+\end_layout
+
+\begin_layout Verbatim
+				BgB
+\end_layout
+
+\begin_layout Section
+Translation
+\end_layout
+
+\begin_layout Subsection
+SAIL text into UTF8
+\end_layout
+
+\begin_layout Subsection
+MFD and UFD user codes
+\end_layout
+
+\begin_layout Subsection
+Binary into CSV, SVG, PNG and octal
+\end_layout
+
+\begin_layout Subsection
+Software: the PDP10 machine code into 'C' hack
+\end_layout
+
+\begin_layout Section
+Handoff the Baton -
+\begin_inset Newline newline
+\end_inset
+
+Output to SD chips
+\end_layout
+
+\begin_layout Chapter
+Haystack Access, Search, Privacy
+\end_layout
+
+\begin_layout Section
+How Haystack Heaps work
+\end_layout
+
+\begin_layout Section
+What Z.
+ Would Really Prefer
+\end_layout
+
+\begin_layout Standard
+In the Brian Zuzga paper an adequate database of the contents of the MIT
+ archival tapes is envisioned.
+ Related to this paper, a database of the contents of the Stanford archival
+ tapes has existed and been used for some twenty years; but it has always
+ been easy to envision improvements.
+\end_layout
+
+\begin_layout Section
+Privacy and Permission
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+It is easier to ask forgivenness, than for permission
+\begin_inset Quotes erd
+\end_inset
+
+ John McCarthy told me; he further advised 
+\begin_inset Quotes eld
+\end_inset
+
+do not be in a hurry to contact Stanford administrators
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Road Map Atlas
+\end_layout
+
+\begin_layout Section
+File Classifier
+\end_layout
+
+\begin_layout Itemize
+Envelopes and Wrappers
+\end_layout
+
+\begin_layout Itemize
+Metadata that is in-band or out-of-band
+\end_layout
+
+\begin_layout Itemize
+carrier, noise, signal and payload
+\end_layout
+
+\begin_layout Itemize
+page attributes
+\end_layout
+
+\begin_layout Subsection
+Identify the PDP-10 Executable Files
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+
+\series bold
+\size large
+by dot extension name .DAT
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+
+\series bold
+\size large
+by the JOBDAT 96.
+ word header
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+
+\series bold
+\size large
+by the RUN command — can this dog run ?
+\end_layout
+
+\begin_layout Standard
+For SAILDART almost all the PDP-10 executable files are dump files with
+ the DMP extension.
+ Many dump files can be found renamed with the extension OLD.
+ There are also executible files for secondary processors such as the SDS40,
+ the PDP-11 and the IMLAC.
+ PDP-10 executables dominate the SAILDART corpus.
+ The PDP-10 DMP executibles must have a ninety-six word header that is called
+ the Job Data Area, JOBDAT.
+ The integer ninety-six in octal is written 
+\begin_inset Quotes eld
+\end_inset
+
+0140
+\begin_inset Quotes erd
+\end_inset
+
+ in 'C' or Javascript, 
+\begin_inset Quotes eld
+\end_inset
+
+0o140
+\begin_inset Quotes erd
+\end_inset
+
+ in python and horrible to relate it is 
+\begin_inset Quotes eld
+\end_inset
+
+octal!140
+\begin_inset Quotes erd
+\end_inset
+
+ in 'D'.
+\end_layout
+
+\begin_layout Subsection
+Distinguish Text vs.
+ Binary
+\end_layout
+
+\begin_layout Standard
+In retrospect, this test now seems to be a trivial problem.
+ The dominate text editor was named E.
+ ( Enterprise, the aircraft carrier, is on the E manual cover.
+ Enterprise, the starship, is on the GEOMED cover.
+ ) E maintained a table of contents at the front of each file; the first
+ line is always like this 
+\begin_inset Quotes eld
+\end_inset
+
+COMMENT ⊗ VALID 00008 PAGES
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Only the numeric characters may vary to indicate the number of pages.
+ The earlier text editors, STOPGAP and SOS (Son of Stopgap) had distinctive
+ line number conventions so that looking at bit #35 for line numbers is
+ also an easy test.
+\end_layout
+
+\begin_layout Standard
+The full bore histogram of the SAIL 7-bit bytes for character frequency
+ of a file also easily distinguish text from binary; except I initially
+ mislead myself on the class of files that have printer hardware escape
+ sequences XGP DVI POX and so on, and then are the files with a lot of markup
+ text or really binary ? unfortunately the answer is NO, highly marked up
+ text is NOT binary it is still text, but not what I would consider 
+\begin_inset Quotes eld
+\end_inset
+
+natural text
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+abstract text
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+simple text
+\begin_inset Quotes erd
+\end_inset
+
+ which might be a 1D vector or list of UTF8 characters.
+\end_layout
+
+\begin_layout Subsection
+More File attributes
+\end_layout
+
+\begin_layout Subsubsection*
+Public or Private
+\end_layout
+
+\begin_layout Standard
+The obvious public areas on the SAIL-WAITS time sharing system start with
+ the binary executibles in [1,3] and the documentation in [DOC,SYS] and
+ even a lot of the source code in [CSP,SYS] was public.
+\end_layout
+
+\begin_layout Subsubsection*
+Quality and Quantity
+\end_layout
+
+\begin_layout Subsubsection*
+Component or Conglomerate
+\end_layout
+
+\begin_layout Subsubsection*
+Datetime stamps and PRG code authors
+\end_layout
+
+\begin_layout Standard
+The naive belief that the PRG codes correspond to proving the authorship
+ (or ownership) of files on the 1970s backup tapes; is only exceeded by
+ a naive belief in the datetime stamps of files.
+ Most of the PRG codes indeed correspond to the author of the files, and
+ almost all of the datetime stamps are indeed credible.
+ However, my file 
+\series bold
+QUEENS.FAI 
+\series default
+shows up first timestamped and PRG code DBA (Bruce Andersen).
+ Back when the puzzle problem of how many ways can you arrange five queens
+ to cover (attack) every square on the chess board, I was the only one to
+ code my solution in machine code.
+\end_layout
+
+\begin_layout Standard
+Even the matter of associating PRG codes with human names requires paying
+ close attention to the in band SAILDART personnel records; and reconstructing
+ which records were primary and which were derived in each year of the epoch.
+ Some what starts off in Queenette Bauer's personal disk area gets expanded
+ by Lester Earnest and automated by Ralph Gorin and finally is absorbed
+ into the Stanford Computer Science Department as it growns in size well
+ beyond the original SAIL as the world learns how to write and then how
+ to run database software.
+\end_layout
+
+\begin_layout Subsubsection*
+File Protection and File Mode
+\end_layout
+
+\begin_layout Standard
+The SAIL file protection bits are NOT unix and changed slightly in meaning
+ over the years.
+\end_layout
+
+\begin_layout Subsubsection*
+Redaction and Damaged
+\end_layout
+
+\begin_layout Standard
+By volume most of the file redaction is for redundant material, the processing
+ is call dedupping.
+\end_layout
+
+\begin_layout Subsection
+File Type by dot ● Extension and Write Tool
+\end_layout
+
+\begin_layout Standard
+File type identification by extension code and by the name of the program
+ that wrote the file.
+ Because of the short fixed length file names (one to six characters), the
+ disk retrieval info block could log the name of the program that wrote
+ the file in a single PDP-10 word.
+ And all those disk Retrieval Info Blocks, RIB, are included in the DART
+ metadata for every file fragment ! Again and again and again ad nauseum.
+\end_layout
+
+\begin_layout Subsection
+Classification Recapped
+\end_layout
+
+\begin_layout Section
+Concordance
+\end_layout
+
+\begin_layout Standard
+A brute force concordance, which can be made using a short perl script,
+ was easy to generate and somewhat useful in the early 2000 aughts.
+ One initial surprise back then was that there were files in the tape archive
+ that had almost every English word ! Sheesh, I had forgotten my associates
+ who invented Spell Checkers, Word Hyphenators or worked on Natural Language
+ software in the early 1970s.
+ Also potentially useful were all the hits on human names, but that becomes
+ tiresome when you begin to comprehend the extent that a 1970s university
+ time sharing computer was just a huge Rolodex, as well as a recipe notebook
+ and a dumpster full of newspaper clippings from the earliest experimental
+ NYT and AP wire service computerized news.
+\end_layout
+
+\begin_layout Standard
+Another catagory of easy classification, 
+\shape italic
+like shooting fish in a barrel
+\shape default
+, is email.
+ At SAIL on WAITS the partial differential character ∂ is the prefix for
+ the date of a message, and by some dumb fluke the ∂ glyph was used for
+ very little else.
+ So grep on ∂ and split and sort and load into your data base to see all
+ the email / bulletin board / message traffic for two decades for a couple
+ of hundred opinionated people who lived in the previous century.
+\end_layout
+
+\begin_layout Section
+Production Quality Software
+\end_layout
+
+\begin_layout Section
+Authenticity and Provenance
+\end_layout
+
+\begin_layout Standard
+The SAIL accounting records are excellent.
+ In the 1970s computer service was expensive and time sharing required accurate
+ accounting on how the limited funding was shared to fairly cover the users'
+ session time at a console, disk space, memory used and CPU execution cycles
+ consumed.
+ The three dimension were measured in units minutes of time logged in, Tracks-of
+-Disk space, and Kilo-Core-Ticks of memory x CPU-time.
+ ( Reservations at Stanford, followed an Ivan Sutherland invention from
+ MIT / Lincoln Labs of bidding in Whams and Bams on a paper sheet for hours
+ of console time and machine time ).
+\end_layout
+
+\begin_layout Standard
+Due to the 2020 plague, I reread the historical novel
+\shape italic
+ A Distant Mirror
+\shape default
+ by Barbara Tuchman 1978, set in the period of the Black Death 1348-50 with
+ the protagonist Enguerrand de Couey VII the source of this history is the
+ daily logs and accounting records kept by scribes employed by the noble
+ gangster knight to keep track of all his dirty money transactions.
+\end_layout
+
+\begin_layout Chapter
+Final Remark
+\end_layout
+
+\begin_layout Standard
+“Truth is found in synthesis which reconciles thesis and anti thesis.”
+\end_layout
+
+\begin_layout Standard
+– Georg Friedrich Wilhelm Hegel ( his dialectical method paraphrased )
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In summary, Zuzga's thesis is that there should be one universal archival
+ format, one ring to rule them all.
+ Baumgart's antithesis is that digital archiving is a relay race, you carry
+ the baton for whatever distance you can and hand it off to others translated
+ into the most common open formats prevaling in your final days.
+\end_layout
+
+\begin_layout Chapter
+Appendix A
+\begin_inset Newline newline
+\end_inset
+
+DART Format Details
+\end_layout
+
+\begin_layout Section
+Narrative Description of the DART format.
+\end_layout
+
+\begin_layout Subsubsection*
+Five bytes to the PDP-10 word
+\end_layout
+
+\begin_layout Standard
+When writing to 9-track magnetic tape, PDP-10 words of 36-bits were transferred
+ by the I/O hardware into bytes in big endian order with the final four
+ bits in the low order of the fifth byte.
+ 
+\end_layout
+
+\begin_layout Standard
+The thirty-six bit SAIL computer words were written to tape, big endian,
+ in five octet bytes.
+ The fifth byte of each word has four low order data bits and four bits
+ of high order zero-bit padding.
+ When the tape drives loses sync, octets can be lost or inserted, and the
+ remaining words would be garbled, however by scanning in the serial byte
+ stream for DART record landmarks, the position of the misaligned octets
+ can be adjusted and the remaining words of the record properly aligned.
+\end_layout
+
+\begin_layout Subsubsection*
+Seven bit SAIL text encoding
+\end_layout
+
+\begin_layout Standard
+Most text at SAIL was encoded in a 7-bit ASCII where the thirty-one characters
+ after zero 000 ASCII NUL were mapped into non-Standard non-ASCII glyphs.
+ For example 001 was ↓ down arrow.
+ Unless your are listening to this on ear buds while flying across the Pacific,
+ 
+\emph on
+Look
+\emph default
+ at the SAIL-to-Unicode table and 
+\emph on
+Skip
+\emph default
+ reading the next paragraph.
+\end_layout
+
+\begin_layout Standard
+Continuing as narration, I wish to recite the SAIL octal codes for the 
+\series bold
+arrow
+\series default
+ glyphs as 001 down arrow, 027 double arrow horizontal, 031 right arrow,
+ 136 up arrow and 137 left arrow; and which are 
+\emph on
+exegesized
+\emph default
+ into the Unicode hexadecimal codes U2193 , U2194, U2192, U2191 and U2190
+ respectively.
+ The 
+\series bold
+Greek letter 
+\series default
+glyphs at SAIL were octal code 002 for α alpha, 003 for β beta, 006 for
+ ε epsilon, octal 010 for λ lambda, and 007 for π pi.
+ The five Greek letters become Unicode u03b1, u03b2, u03b5, u03bb and u03c0.
+ For 
+\series bold
+Logic and Math
+\series default
+ the SAIL codes 004, 037, 024, 025, 005, 026, 016 and 017 represent glyphs
+ for boolean AND, boolean OR, for each, there exists, boolean NOT, XOR as
+ a circle X, infinity as the lazy eight symbol and the partial differential
+ operator.
+ These codes respectively become Unicode u2227, u2228, u2200, u2203, u00AC,
+ u2297, u221E and u2202.
+ Then a few extra mathematical 
+\series bold
+relation and horseshoe
+\series default
+ symbols encoded at SAIL as octal 033, 034, 035, 036 and 020, 021, 022,
+ 023 which are again in order are ≠ ≤ ≥ ≡ and ⊂ ⊃ ∩ ∪ that become Unicode
+ u2260, u2264, u2265, u2261 and for the horse shoes u2282, u2283, u2229
+ and u222A.
+\end_layout
+
+\begin_layout Standard
+The point here is that even if this Prolegomenon and its Exegesis are lost
+ (or are not provided to an archive decoding test candidate) the DART gram
+ is not hard to interpret after the idea of 7-bit characters that are nearly
+ ASCII is re-discovered.
+ Then the DART record metadata are merely irritating hiccups in a stream
+ of text.
+ Reading all that text provides the future Cyber-Sapien archivist (
+\emph on
+long after the self destructive Homo-Stupids have disappeared
+\emph default
+), with the actual software which wrote the DART message, late in its analysis
+ the decoding expert will 
+\begin_inset Quotes eld
+\end_inset
+
+see
+\begin_inset Quotes erd
+\end_inset
+
+ the glyph shapes in the binary font files or in the \SpecialChar TeX
+ metafont files.
+\end_layout
+
+\begin_layout Subsubsection*
+SIXBIT file name encoding
+\end_layout
+
+\begin_layout Standard
+The SAIL-WAITS file system is primitive, it was a tool of pioneers working
+ on the frontier.
+ Filenames were one to six characters, optionally followed by dot and a
+ one to three character extension.
+ All filename alphabetic characters where uppercase.
+ The character codes for A to Z were six bits wide as octal 041 to octal
+ 074.
+ The digits are octal 020 to octal 031.
+ The blank is zero.
+ Filename characters on the DART media (as well as internal to the Operating
+ System) could have any of the 64 character values.
+\end_layout
+
+\begin_layout Subsubsection*
+SAIL-WAITS file system
+\end_layout
+
+\begin_layout Standard
+Each file belonged to a directory specified by left square bracket project
+ code comma programmer code right square bracket.
+ The project and the programmer codes where each one to three characters
+ long.
+\end_layout
+
+\begin_layout Standard
+Alien to the SAIL file system is the now familiar file system concept of
+ having content blobs separate from directory entries.
+ On GNU/Linux file systems, one or many file path names may be hard linked
+ to one content blob, which was impossible in the SAIL-WAITS file system.
+ At SAIL the early disk hardware was unreliable so that a seek command was
+ not be fully trusted to get to the proper cylinder, head and sector of
+ a disk drive.
+ So the file name (directory entry), which SAIL called the Retrieval Information
+ Block (or RIB), included the file name and was written into each data block
+ (called a Track) that was needed to hold the file's data.
+ And so too on the DART tapes within the sequence of FILE tape data blocks
+ each tape block has a full copy for the Retrieval Information.
+\end_layout
+
+\begin_layout Subsubsection*
+Segmentation into DART records
+\end_layout
+
+\begin_layout Standard
+There are two original DART record types: Tape-Marker (Head or Tail) File-Data
+ (Start or Continue).
+ I have added a third record type named Gap, to passover the 61 segments
+ of bytes which failed to decode as DART records.
+ Previewing the data shows that all the Tape-Marker records are exactly
+ sixty bytes long and each contains the tape reel number and a date-time
+ stamp.
+ The first word of each DART record has its record size.
+ The record lengths segment the whole DART byte stream with only 63 defects,
+ continuing after a defect requires scanning for the next sane record.
+\end_layout
+
+\begin_layout Standard
+With the extreme precision that is available to latter day archival software,
+ the DART segmentation goes as follows: the long byte vector, of exactly
+ 56_446_334_821 bytes, contains exactly 2_937_291 short segments of which
+ 5_486 are head-tail records, 1_886_472 are file-start records, 1_045_270
+ are file-continue records plus the 63 gaps.
+ Or more colloquially, the fifty-six gigabytes of tape data have nearly
+ three million short records which contain the data and the names of about
+ one million old SAIL files.
+\end_layout
+
+\begin_layout Standard
+Three further mechanisms need to be previewed here.
+ First, it was the intentional DART backup policy to write two copies of
+ each SAIL file that was deemed of permanent value to two different permanent
+ backup reels of tape.
+ A file found by the utility programs named DSKUSE and DART resident on
+ the SAIL community commons SYS: disk system would be marked as archived
+ once, then marked as archived for a second time, and then there after omitted
+ from further archiving.
+ So each SAIL file should appear in the dart record in two places in the
+ tape records with the same identical content, name and date-time stamp.
+ Second, a unique SAIL-WAITS filename will appear again (with yet two further
+ copies each time) for each newer date-time stamped revision.
+ Generally human edited files do not change very much between revisions.
+ Third, it was the unintentional result of unreliable disk seeking mechanism
+ that meant that file retrieval information including the file name was
+ stored multiple times within the file 
+\begin_inset Quotes eld
+\end_inset
+
+blocks
+\begin_inset Quotes erd
+\end_inset
+
+ on the disk media.
+ That meant that the SAIL-WAITS file system would contain multiple copies
+ of exactly the same content of a file when a file was copied from one user
+ directory into another.
+ Other kinds of short files (the professional digital archivist term for
+ these files is 
+\begin_inset Quotes eld
+\end_inset
+
+turd
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+fart
+\begin_inset Quotes erd
+\end_inset
+
+) are generated by common utility programs in many user directories with
+ content of no value to the historical record aside from traffic analysis.
+ The result is that the population of 1_886_472 SAIL files in the DART halves
+ to fewer than 900_000 different content blobs, each content blob has one
+ to many hundreds (and for a couple of blobs even thousands) of directory
+ entry name tags (aka retrieval information) rows in the database table
+ of the SAIL-WAITS file names.
+\end_layout
+
+\begin_layout Paragraph*
+FILE-START and FILE-CONTINUE tape records
+\end_layout
+
+\begin_layout Standard
+File-Start and File-Continue records are identical in format and in content
+ of their file metadata.
+ The File-Start is marked type -3 in the left half of word 0.
+ and the constant sixbit/*FILE*/ in word 19.
+ The File-Continue record is marked type 0 in the left half of word 0 and
+ sixbit/*CONT*/ in word 19.
+ So describing them both as FILE blocks they have 36.
+ words of prefix, then up to 10240.
+ words of data payload, then a 23.
+ word postfix which is most often completely zero except when a few bits
+ are tinked pursuant to observations of error conditions in the reading
+ of the low density tapes.
+\end_layout
+
+\begin_layout Standard
+The FILE metadata is sixbit/FILNAM/ sixbit/EXT/ sixbit/PRJPRG/ the length
+ of the file in words, SAIL-WAITS protection bits, mode that the file was
+ written, and a date-time stamp.
+\end_layout
+
+\begin_layout Standard
+The file data block records seen on the high density tapes are surprisingly
+ fat considering the computer poverty of the prior 18 year period.
+ The explanation is that the DART data format version #3 was a final revision
+ done to handle the massive MCOPY of the 3000 old tapes into the newer higher
+ density ones, the format was over ambitious and had allocated many bytes
+ of space that were never used.
+\end_layout
+
+\begin_layout Paragraph*
+HEAD and TAIL tape records
+\end_layout
+
+\begin_layout Standard
+All the tape HEAD and TAIL records are exactly 60.
+ bytes long.
+ Each contains 12.
+ PDP-10 words.
+ Seven of the twelve words have a fixed constant value, making the HEAD-TAIL
+ records easy to find in a byte string, the other five words carry a date-time
+ stamp, a checksum for 10.
+ words of the HEAD-TAIL record, the tape reel number and the tape position
+ in feet from the tape load point which is irrelevant to the SAIL-WAIT file
+ system but it is amusing to know where the low density tape reel images
+ fall within the high density tapes.
+\end_layout
+
+\begin_layout Standard
+There are 41_594 tape records from the higher density tapes, which each
+ in turn contain 1 to 100 or so small records from the lower density tapes.
+ In total there are 2_934_700 of the small records plus the 63 gaps.
+\end_layout
+
+\begin_layout Standard
+The 229 reels of high density DART tape are labeled P3000 to P3229, as mentioned
+ earlier, the reels still exist and are kept in the Stanford University
+ Digital Archive housed in the Green Library building on the campus in Palo
+ Alto, California.
+ Each tape contains high density (6250 bpi) records.
+ Each high density record is a concatenation of records from the lower density
+ (800 bpi) tapes which were label P1 to P2984.
+ The letter 'P' indicated Permanent backup tape as oppose to the incremental
+ ones which were marked 'T' for Temporary.
+ The final reel of Permanent Tape was written 16 August 1990 and that reel
+ of tape was copied to disk in March 1998, however the earliest file I have
+ from that reel is time stamped 17 June 1998.
+ The rescue of the high density tapes to disk was not a well documented
+ process, the quantity of old tape in the basement of the CSD building was
+ overwhelming, the speed of the tape drive was slow, the working hours were
+ 2nd and 3rd shift, the disks drives were nine Gigabytes each and were taken
+ off site to copy into several other systems since there was not enough
+ disk space available to us on a single system.
+\end_layout
+
+\begin_layout Standard
+The low density reels were written over a period of nearly 18 years.
+ The HEAD of tape #P1 is time stamped 1972-11-05T11:59 and its TAIL is marked
+ 1972-11-05T12:23 which implies that first tape took 24 minutes to be written
+ on a quiet Sunday in November around lunch time.
+ Richard Nixon wins re-election to a second term as president of the United
+ States on the following Tuesday 7 November 1972.
+\end_layout
+
+\begin_layout Standard
+The high density reels were written over a period of nearly 31 months.
+ The HEAD of the first high-density DART tape #P3000 is time stamped 1988-02-01T
+17:17 The TAIL record on the final high density tape #P3228 is dated 1990-08-16T
+22:55 so at nearly 11 PM on Thursday in mid August the DART record ends.
+ Iraq had annexed Kuwait during the first week of August 1990.
+\end_layout
+
+\begin_layout Standard
+The final lower density tape #P2984 is time stamped 1990-08-17T16:43 which
+ overlaps the time period in which the final high density tape is written.
+\end_layout
+
+\begin_layout Subsubsection*
+GAPS
+\end_layout
+
+\begin_layout Standard
+The data found in the 63 gaps, is assigned its MD5 blob serial number and
+ tagged with a unique SAIL file label and included in the SAILDART collection
+ as allowed by KISS design authority (Keep It Simple Stupid) principle and
+ the Brewster Kahle archiving principle of keep everything you can but don't
+ fret the details.
+ Working at the Internet Archive we would boost that we were going for Quantity
+ first, not Quality; the SAILDART data of 1998 is a pleasant past time since
+ its Fixed Quantity becomes a lot easier to manage with each passing year.
+\end_layout
+
+\begin_layout Section
+DART formats Illustrated.
+\end_layout
+
+\begin_layout Subsection*
+Six frames of 7-track tape supply a 36-bit PDP10 word
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 6
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A A A A A A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B B B B B B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C C C C C C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D D D D D D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E E E E E E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F F F F F F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bits 0 to 5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 6 to 11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 12 to 17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 18 to 23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 24 to 29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 30 to 35
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+7-track PDP10 word
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Five frames of 9-track tape supply a 36-bit PDP10 word
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+frame 5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+A A A A A A B B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+B B B B C C C C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+C C D D D D D D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+E E E E E E F F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size footnotesize
+0 0 0 0 F F F F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bits 0 to 7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 8 to 15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 16 to 23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 24 to 31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bits 32 to 35
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+9-track PDP10 word
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+7-bit SAIL ASCII to Unicode and UTF-8 table
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="17" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+null
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+↓
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+α
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+β
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+∧
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+¬
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ε
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+π
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+λ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+t
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+v
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+r
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+∞
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+∂
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+020
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+⊂
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+⊃
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+∩
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+∪
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+∀
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+∃
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+⊗
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+↔
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+030
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+→
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+~
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+≠
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+≤
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+≥
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+≡
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+∨
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+040
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+␣
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+$
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+&
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+050
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+,
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+060
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+070
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+;
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+110
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+120
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+W
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+130
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Z
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+↑
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+←
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+140
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+`
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+f
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+g
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+150
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+h
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+j
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+k
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+l
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+n
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+o
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+r
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+s
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+t
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+u
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+v
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+w
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+170
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+z
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ALT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BS
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+7-bit SAIL ASCII code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+6-bit ASCII minus 040 code table
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="9">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="2em">
+<column alignment="center" valignment="middle" width="2em">
+<row topspace="1em" bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+␣
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+$
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+&
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+*
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+,
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+;
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+D
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+E
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+G
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+H
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+J
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+K
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+P
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Q
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+S
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+T
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+U
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+W
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="1em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+70
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Y
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Z
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+[
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\backslash
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+]
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+^
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+6-bit SIXBIT code
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+DART tape HEAD and TAIL record format.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="4">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top" width="4em">
+<column alignment="center" valignment="top" width="7em">
+<column alignment="center" valignment="top" width="9em">
+<column alignment="center" valignment="top" width="9em">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+word
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Type_Size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+000006_000013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+type#6
+\end_layout
+
+\begin_layout Plain Layout
+11.words
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_DART_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+444162_640000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+sixbit/DART␣␣/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BOT_EOT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+125045_414412 
+\end_layout
+
+\begin_layout Plain Layout
+126441_515412
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+sixbit/*HEAD*/
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+sixbit/*TAIL*/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+date_time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ppn
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+445560_637163
+\end_layout
+
+\begin_layout Plain Layout
+005543_637163
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+sixbit/DMPSYS/
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+sixbit/ MCSYS/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Class2 Tape
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XWD 2,Tape#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rel_Abs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+feet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+word8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+minus1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+777777_777777
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+-1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+word10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+checksum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+\series bold
+Rotated
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DART tape HEAD and TAIL record format
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+DART file START and CONTINUE record format.
+\end_layout
+
+\begin_layout Standard
+The MCOPY version#6 DART file (start and continue) record format has five
+ parts.
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle" tabularwidth="100col%">
+<column alignment="right" valignment="middle" width="2em">
+<column alignment="center" valignment="top" width="7em">
+<column alignment="center" valignment="top" width="6em">
+<column alignment="center" valignment="top" width="15em">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+words
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+description
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+I
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TypeSize
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DART record 
+\begin_inset Newline newline
+\end_inset
+
+Type and Size
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+II
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RIB
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+WAITS File System
+\begin_inset Newline newline
+\end_inset
+
+Retrieval-Info-Block
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+III
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Leader
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MCOPY extra
+\begin_inset Newline newline
+\end_inset
+
+baggage
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0≤N\text{≤}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $10240.-61.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Payload
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+portion of the
+\begin_inset Newline newline
+\end_inset
+
+actual file data
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+V
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PRMERR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Previous
+\begin_inset Newline newline
+\end_inset
+
+Media Errors
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DART file START and CONTINUE record format
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Diagram of parts I and II
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="19" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top" width="10em">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+octal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+decimal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+symbolic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+value
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+comment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+type_size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(-3 or 0),,size
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+size is 2 short of record length
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dsk_or_error
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+'DSK'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+constant
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDNAM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+'filnam'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+file name
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDEXT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XWD 'ext',Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+create (c)Date
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+002
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDPRO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+prot, mode,
+\begin_inset Newline newline
+\end_inset
+
+time, date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+write (m)Date Time
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+003
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDPPN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XWD 'prj','prg'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+project programmer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDLOC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+track#
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+disk track
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDLNG
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+file length
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PDP10 words
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+006
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DREFTM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+reference date time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(a)Date Time
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+007
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDMPTM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(T or P)dump date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(d)Date
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DGRP1R
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+first group
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+011
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DNXTGP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+next group
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+012
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DSATID
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+03164236 then 'RSK' or 'TSK' or 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Storage Allocation Table ID
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DQINFO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+defective 154 times
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+014
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+zero14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+defective 32 times
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+015
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+wrtool
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+'progrm'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+write program name
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+016
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDWPPN
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XWD 'prj','prg'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+write project programmer
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+017
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DDOFFS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+=1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DART file record details I and II.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Diagram of parts III, IV and V
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="27" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="8em">
+<column alignment="center" valignment="top" width="15em">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+octal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+decimal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+symbolic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+comment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+022
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+_DART_
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sixbit/DART␣␣/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+023
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+File_Con
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sixbit/*FILE*/ or
+\begin_inset Newline newline
+\end_inset
+
+sixbit/CON␣␣#/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+024
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+date-time
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+when MCOPY
+\begin_inset Newline newline
+\end_inset
+
+reel written
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MC_SYS
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sixbit/␣MCSYS/
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+026
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+two_reel
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XWD class=2 and
+\begin_inset Newline newline
+\end_inset
+
+MCOPY reel#
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+027
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+one_one
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XWD 1 and 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+030
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Feet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MCOPY reel position
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+031
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+032
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+033
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+034
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Words_To_Go
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+payload words
+\begin_inset Newline newline
+\end_inset
+
+remaining in file
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+035
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+036
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+037
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+040
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+041
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+042
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+043
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+044
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+36...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+file blob
+\begin_inset Newline newline
+\end_inset
+
+data payload
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PRMERR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+002
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+024
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+025
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+'$PEND$'
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+046045_564404
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+026
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+checksum
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XOR
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+DART file record details III, IV and V
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Appendix B
+\begin_inset Newline newline
+\end_inset
+
+REMIX Format Details
+\end_layout
+
+\begin_layout Standard
+REMIX unpacks the 
+\family typewriter
+\series bold
+flat_DART_data8
+\family default
+\series default
+ file into six csv files named attributes, coordinates, dates, ribs, tags
+ and tapedex.
+ The first line of each file suggests database field names.
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\end_layout
+
+\end_body
+\end_document
