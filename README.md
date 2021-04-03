@@ -1,5 +1,5 @@
 # Documentation
-So far, there are three papers here concerning the existing Stanford and MIT A. I. Lab tape-archive time-capsules.
+There are four papers here concerning long-term archiving and the existing Stanford and MIT A. I. Lab tape-archive time-capsules.
 Further tapes might be found for CMU, RAND and SRI artitificial intelligence reseach during the three decades, 1960 to 1990
 
 
@@ -18,6 +18,11 @@ Further tapes might be found for CMU, RAND and SRI artitificial intelligence res
   Lester Earnest
   November 2009
   
+  **A System for Long-Term Document Preservation**
+  by
+  Larry Masinter, Michael Welch; Adobe
+  2006
+  
 
 # Samples of the tape data from SU and MIT
 coming soon to github repo from other repositories and web-sites
@@ -27,3 +32,5 @@ WIP from scattered locations
 
 # Accessing the full time-capsules
 without having to go to the Artic Code Vault
+
+
